@@ -1,13 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="ProjectPOC" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="yvm-eX-kJn" id="kuB-Yx-OPi"/>
+                <outlet property="forgotPasswordLbl" destination="tqb-Eb-OnR" id="nJ3-8x-Rm1"/>
+                <outlet property="joinNowbtn" destination="wIH-jk-AHO" id="74Z-kv-1rp"/>
+                <outlet property="loginBtn" destination="H0Y-rm-JaY" id="Hsh-N5-rAJ"/>
+                <outlet property="passwordTxt" destination="9WN-0p-pkC" id="BIo-yz-NWY"/>
+                <outlet property="userNameTxt" destination="1ef-k3-P2B" id="4VR-h5-GuR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +33,73 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-MD-wDI">
+                    <rect key="frame" x="20" y="284" width="335" height="100.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1ef-k3-P2B">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9WN-0p-pkC">
+                            <rect key="frame" x="0.0" y="40" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot you password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-Eb-OnR">
+                            <rect key="frame" x="0.0" y="80" width="335" height="20.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.98744888537511211" green="0.97453206201260623" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-rm-JaY">
+                    <rect key="frame" x="100" y="404.5" width="175" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="cOP-Ua-1KQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="0nZ-ms-Q2d"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-eX-kJn">
+                    <rect key="frame" x="169" y="444" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-jk-AHO">
+                    <rect key="frame" x="100" y="240" width="175" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="JOIN NOW">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="joinNowBtnPressed:" destination="-1" eventType="touchUpInside" id="YjY-JM-Ogj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.30232897987482577" green="0.29837421311347967" blue="0.30617177694213205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yvm-eX-kJn" firstAttribute="top" secondItem="H0Y-rm-JaY" secondAttribute="bottom" constant="7.5" id="8w9-cb-iad"/>
+                <constraint firstItem="wIH-jk-AHO" firstAttribute="width" secondItem="H0Y-rm-JaY" secondAttribute="width" id="A0j-Wa-tko"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0Y-rm-JaY" secondAttribute="trailing" constant="100" id="Dgi-sE-uU7"/>
+                <constraint firstItem="H0Y-rm-JaY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="LIW-sX-dtb"/>
+                <constraint firstItem="BWm-MD-wDI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OxQ-rZ-Rlo"/>
+                <constraint firstItem="yvm-eX-kJn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RPJ-ah-06w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BWm-MD-wDI" secondAttribute="trailing" constant="20" id="T6L-Dc-hhR"/>
+                <constraint firstItem="wIH-jk-AHO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="boR-GE-btN"/>
+                <constraint firstItem="BWm-MD-wDI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="d6F-RP-dTm"/>
+                <constraint firstItem="H0Y-rm-JaY" firstAttribute="top" secondItem="BWm-MD-wDI" secondAttribute="bottom" constant="20" id="rIH-qy-2V6"/>
+                <constraint firstItem="BWm-MD-wDI" firstAttribute="top" secondItem="wIH-jk-AHO" secondAttribute="bottom" constant="8" id="zE5-yN-dRW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wIH-jk-AHO" secondAttribute="trailing" constant="100" id="zh1-fw-sow"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
