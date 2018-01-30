@@ -54,17 +54,19 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         dataBase.collection("users").whereField("username", isEqualTo: userNameTxt.text!).whereField("password", isEqualTo: passwordTxt.text!).getDocuments { (snapshot, error) in
             
             if error != nil {
-                print(error)
+                print(error!)
             }else{
                 print("Login successful!")
                 
-                
-//                for document in (snapshot?.documents)! {
-//                    if let password = document.data()["password"] as? String {
-//                        print(password)
-//
-//                    }
-//                }
+                for document in (snapshot?.documents)! {
+                    
+                    if let password = document.data()["password"] as? String {
+                        if let username = document.data()["username"] as? String {
+                            print("Username= \(username),Password= \(password)")
+                        }
+                    }
+                   
+                }
                 
             }
             self.activityIndicator.stopAnimating()

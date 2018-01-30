@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1631303E2020538000F5B4A4 /* LandinPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631303C2020538000F5B4A4 /* LandinPageViewController.swift */; };
+		1631303F2020538000F5B4A4 /* LandinPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1631303D2020538000F5B4A4 /* LandinPageViewController.xib */; };
 		16C761A2201F99ED00EC372E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C761A1201F99ED00EC372E /* AppDelegate.swift */; };
 		16C761A7201F99ED00EC372E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C761A5201F99ED00EC372E /* Main.storyboard */; };
 		16C761A9201F99ED00EC372E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C761A8201F99ED00EC372E /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		16075161B7B1F42F8D59E625 /* Pods-ProjectPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectPOC/Pods-ProjectPOC.release.xcconfig"; sourceTree = "<group>"; };
+		1631303C2020538000F5B4A4 /* LandinPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandinPageViewController.swift; sourceTree = "<group>"; };
+		1631303D2020538000F5B4A4 /* LandinPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandinPageViewController.xib; sourceTree = "<group>"; };
 		16C7619E201F99ED00EC372E /* ProjectPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C761A1201F99ED00EC372E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C761A6201F99ED00EC372E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16313040202053DF00F5B4A4 /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				1631303C2020538000F5B4A4 /* LandinPageViewController.swift */,
+				1631303D2020538000F5B4A4 /* LandinPageViewController.xib */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		16313041202053F000F5B4A4 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				16C761B3201F9A1D00EC372E /* LogInViewController.swift */,
+				16C761B4201F9A1D00EC372E /* LogInViewController.xib */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
 		16C76195201F99ED00EC372E = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				16C761B7201FA5AD00EC372E /* GoogleService-Info.plist */,
-				16C761B3201F9A1D00EC372E /* LogInViewController.swift */,
-				16C761B4201F9A1D00EC372E /* LogInViewController.xib */,
+				16313041202053F000F5B4A4 /* LoginPage */,
+				16313040202053DF00F5B4A4 /* LandingPage */,
 				16C761A1201F99ED00EC372E /* AppDelegate.swift */,
 				16C761A5201F99ED00EC372E /* Main.storyboard */,
 				16C761A8201F99ED00EC372E /* Assets.xcassets */,
@@ -159,6 +181,7 @@
 				16C761B6201F9A1D00EC372E /* LogInViewController.xib in Resources */,
 				16C761AC201F99ED00EC372E /* LaunchScreen.storyboard in Resources */,
 				16C761B8201FA5AD00EC372E /* GoogleService-Info.plist in Resources */,
+				1631303F2020538000F5B4A4 /* LandinPageViewController.xib in Resources */,
 				16C761A9201F99ED00EC372E /* Assets.xcassets in Resources */,
 				16C761A7201F99ED00EC372E /* Main.storyboard in Resources */,
 			);
@@ -241,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1631303E2020538000F5B4A4 /* LandinPageViewController.swift in Sources */,
 				16C761B5201F9A1D00EC372E /* LogInViewController.swift in Sources */,
 				16C761A2201F99ED00EC372E /* AppDelegate.swift in Sources */,
 			);
