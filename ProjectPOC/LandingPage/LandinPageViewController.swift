@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
-class LandinPageViewController: UIViewController {
+class LandinPageViewController: UIViewController,FBSDKLoginButtonDelegate  {
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        print("Did llo")
+
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Did logout of facebook!")
+        navigationController?.popViewController(animated: true)
 
+    }
+  
 }

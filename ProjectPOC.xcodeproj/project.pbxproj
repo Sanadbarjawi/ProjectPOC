@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1630503C2020F8D3006312EC /* ProjectPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630503B2020F8D3006312EC /* ProjectPOCTests.swift */; };
 		1631303E2020538000F5B4A4 /* LandinPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631303C2020538000F5B4A4 /* LandinPageViewController.swift */; };
 		1631303F2020538000F5B4A4 /* LandinPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1631303D2020538000F5B4A4 /* LandinPageViewController.xib */; };
 		16C761A2201F99ED00EC372E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C761A1201F99ED00EC372E /* AppDelegate.swift */; };
-		16C761A7201F99ED00EC372E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C761A5201F99ED00EC372E /* Main.storyboard */; };
 		16C761A9201F99ED00EC372E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C761A8201F99ED00EC372E /* Assets.xcassets */; };
 		16C761AC201F99ED00EC372E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C761AA201F99ED00EC372E /* LaunchScreen.storyboard */; };
 		16C761B5201F9A1D00EC372E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C761B3201F9A1D00EC372E /* LogInViewController.swift */; };
@@ -19,13 +19,26 @@
 		D676C076FA55F475C59332D0 /* Pods_ProjectPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7914D1040CBED53E966925 /* Pods_ProjectPOC.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1630503E2020F8D3006312EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C76196201F99ED00EC372E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C7619D201F99ED00EC372E;
+			remoteInfo = ProjectPOC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		16075161B7B1F42F8D59E625 /* Pods-ProjectPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectPOC/Pods-ProjectPOC.release.xcconfig"; sourceTree = "<group>"; };
+		16113D36203A0E9E0088517A /* ProjectPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectPOC.entitlements; sourceTree = "<group>"; };
+		163050392020F8D3006312EC /* ProjectPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1630503B2020F8D3006312EC /* ProjectPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPOCTests.swift; sourceTree = "<group>"; };
+		1630503D2020F8D3006312EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1631303C2020538000F5B4A4 /* LandinPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandinPageViewController.swift; sourceTree = "<group>"; };
 		1631303D2020538000F5B4A4 /* LandinPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandinPageViewController.xib; sourceTree = "<group>"; };
 		16C7619E201F99ED00EC372E /* ProjectPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C761A1201F99ED00EC372E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16C761A6201F99ED00EC372E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16C761A8201F99ED00EC372E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C761AB201F99ED00EC372E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16C761AD201F99ED00EC372E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		163050362020F8D3006312EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16C7619B201F99ED00EC372E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1630503A2020F8D3006312EC /* ProjectPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				1630503B2020F8D3006312EC /* ProjectPOCTests.swift */,
+				1630503D2020F8D3006312EC /* Info.plist */,
+			);
+			path = ProjectPOCTests;
+			sourceTree = "<group>";
+		};
 		16313040202053DF00F5B4A4 /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				16C761A0201F99ED00EC372E /* ProjectPOC */,
+				1630503A2020F8D3006312EC /* ProjectPOCTests */,
 				16C7619F201F99ED00EC372E /* Products */,
 				57B216739A6505FB3F97E8C4 /* Pods */,
 				1EB28A7346ED55E0BFC38888 /* Frameworks */,
@@ -80,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				16C7619E201F99ED00EC372E /* ProjectPOC.app */,
+				163050392020F8D3006312EC /* ProjectPOCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,14 +118,14 @@
 		16C761A0201F99ED00EC372E /* ProjectPOC */ = {
 			isa = PBXGroup;
 			children = (
-				16C761B7201FA5AD00EC372E /* GoogleService-Info.plist */,
+				16113D36203A0E9E0088517A /* ProjectPOC.entitlements */,
+				16C761A1201F99ED00EC372E /* AppDelegate.swift */,
 				16313041202053F000F5B4A4 /* LoginPage */,
 				16313040202053DF00F5B4A4 /* LandingPage */,
-				16C761A1201F99ED00EC372E /* AppDelegate.swift */,
-				16C761A5201F99ED00EC372E /* Main.storyboard */,
 				16C761A8201F99ED00EC372E /* Assets.xcassets */,
 				16C761AA201F99ED00EC372E /* LaunchScreen.storyboard */,
 				16C761AD201F99ED00EC372E /* Info.plist */,
+				16C761B7201FA5AD00EC372E /* GoogleService-Info.plist */,
 			);
 			path = ProjectPOC;
 			sourceTree = "<group>";
@@ -119,6 +150,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		163050382020F8D3006312EC /* ProjectPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163050422020F8D3006312EC /* Build configuration list for PBXNativeTarget "ProjectPOCTests" */;
+			buildPhases = (
+				163050352020F8D3006312EC /* Sources */,
+				163050362020F8D3006312EC /* Frameworks */,
+				163050372020F8D3006312EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1630503F2020F8D3006312EC /* PBXTargetDependency */,
+			);
+			name = ProjectPOCTests;
+			productName = ProjectPOCTests;
+			productReference = 163050392020F8D3006312EC /* ProjectPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		16C7619D201F99ED00EC372E /* ProjectPOC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16C761B0201F99ED00EC372E /* Build configuration list for PBXNativeTarget "ProjectPOC" */;
@@ -149,9 +198,19 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Sanad ";
 				TargetAttributes = {
+					163050382020F8D3006312EC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C7619D201F99ED00EC372E;
+					};
 					16C7619D201F99ED00EC372E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -169,11 +228,19 @@
 			projectRoot = "";
 			targets = (
 				16C7619D201F99ED00EC372E /* ProjectPOC */,
+				163050382020F8D3006312EC /* ProjectPOCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		163050372020F8D3006312EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16C7619C201F99ED00EC372E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,7 +250,6 @@
 				16C761B8201FA5AD00EC372E /* GoogleService-Info.plist in Resources */,
 				1631303F2020538000F5B4A4 /* LandinPageViewController.xib in Resources */,
 				16C761A9201F99ED00EC372E /* Assets.xcassets in Resources */,
-				16C761A7201F99ED00EC372E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +278,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjectPOC/Pods-ProjectPOC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -224,7 +293,10 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -260,6 +332,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		163050352020F8D3006312EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1630503C2020F8D3006312EC /* ProjectPOCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16C7619A201F99ED00EC372E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,15 +352,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		16C761A5201F99ED00EC372E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16C761A6201F99ED00EC372E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		1630503F2020F8D3006312EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C7619D201F99ED00EC372E /* ProjectPOC */;
+			targetProxy = 1630503E2020F8D3006312EC /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		16C761AA201F99ED00EC372E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,6 +372,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		163050402020F8D3006312EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				INFOPLIST_FILE = ProjectPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sanadbarj.ProjectPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectPOC.app/ProjectPOC";
+			};
+			name = Debug;
+		};
+		163050412020F8D3006312EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				INFOPLIST_FILE = ProjectPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sanadbarj.ProjectPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectPOC.app/ProjectPOC";
+			};
+			name = Release;
+		};
 		16C761AE201F99ED00EC372E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,6 +516,7 @@
 			baseConfigurationReference = 50F871770D092BB6BE58F181 /* Pods-ProjectPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectPOC/ProjectPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDZ9JJAWHH;
 				INFOPLIST_FILE = ProjectPOC/Info.plist;
@@ -420,6 +533,7 @@
 			baseConfigurationReference = 16075161B7B1F42F8D59E625 /* Pods-ProjectPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectPOC/ProjectPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDZ9JJAWHH;
 				INFOPLIST_FILE = ProjectPOC/Info.plist;
@@ -434,6 +548,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		163050422020F8D3006312EC /* Build configuration list for PBXNativeTarget "ProjectPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163050402020F8D3006312EC /* Debug */,
+				163050412020F8D3006312EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		16C76199201F99ED00EC372E /* Build configuration list for PBXProject "ProjectPOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -21,8 +21,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="ProjectPOC" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="yvm-eX-kJn" id="kuB-Yx-OPi"/>
+                <outlet property="fbLoginBtn" destination="dzR-mq-kb5" id="zjO-A6-Liq"/>
                 <outlet property="forgotPasswordLbl" destination="tqb-Eb-OnR" id="nJ3-8x-Rm1"/>
-                <outlet property="joinNowbtn" destination="wIH-jk-AHO" id="74Z-kv-1rp"/>
                 <outlet property="loginBtn" destination="H0Y-rm-JaY" id="Hsh-N5-rAJ"/>
                 <outlet property="passwordTxt" destination="9WN-0p-pkC" id="BIo-yz-NWY"/>
                 <outlet property="userNameTxt" destination="1ef-k3-P2B" id="4VR-h5-GuR"/>
@@ -58,9 +58,9 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-rm-JaY">
-                    <rect key="frame" x="100" y="404.5" width="175" height="32"/>
+                    <rect key="frame" x="190" y="405" width="165" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="175" id="cOP-Ua-1KQ"/>
+                        <constraint firstAttribute="width" constant="165" id="cOP-Ua-1KQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                     <state key="normal" title="Login">
@@ -74,33 +74,36 @@
                     <rect key="frame" x="169" y="444" width="37" height="37"/>
                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-jk-AHO">
-                    <rect key="frame" x="100" y="240" width="175" height="36"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="JOIN NOW">
-                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzR-mq-kb5" customClass="FBSDKLoginButton">
+                    <rect key="frame" x="20" y="405" width="162" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4wM-ps-8Pq"/>
+                        <constraint firstAttribute="width" constant="162" id="XwS-AJ-iqj"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="joinNowBtnPressed:" destination="-1" eventType="touchUpInside" id="YjY-JM-Ogj"/>
+                        <outlet property="delegate" destination="-1" id="PV6-S6-u9a"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.30232897987482577" green="0.29837421311347967" blue="0.30617177694213205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="yvm-eX-kJn" firstAttribute="top" secondItem="H0Y-rm-JaY" secondAttribute="bottom" constant="7.5" id="8w9-cb-iad"/>
-                <constraint firstItem="wIH-jk-AHO" firstAttribute="width" secondItem="H0Y-rm-JaY" secondAttribute="width" id="A0j-Wa-tko"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0Y-rm-JaY" secondAttribute="trailing" constant="100" id="Dgi-sE-uU7"/>
-                <constraint firstItem="H0Y-rm-JaY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="LIW-sX-dtb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H0Y-rm-JaY" secondAttribute="trailing" constant="20" id="Dgi-sE-uU7"/>
+                <constraint firstItem="H0Y-rm-JaY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="190" id="LIW-sX-dtb"/>
                 <constraint firstItem="BWm-MD-wDI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OxQ-rZ-Rlo"/>
                 <constraint firstItem="yvm-eX-kJn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RPJ-ah-06w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BWm-MD-wDI" secondAttribute="trailing" constant="20" id="T6L-Dc-hhR"/>
-                <constraint firstItem="wIH-jk-AHO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="boR-GE-btN"/>
+                <constraint firstItem="H0Y-rm-JaY" firstAttribute="leading" secondItem="dzR-mq-kb5" secondAttribute="trailing" constant="8" id="TQ6-SG-XTM"/>
                 <constraint firstItem="BWm-MD-wDI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="d6F-RP-dTm"/>
+                <constraint firstItem="dzR-mq-kb5" firstAttribute="top" secondItem="BWm-MD-wDI" secondAttribute="bottom" constant="20.5" id="gqN-M5-qt7"/>
+                <constraint firstItem="dzR-mq-kb5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ngs-Ei-yiO"/>
                 <constraint firstItem="H0Y-rm-JaY" firstAttribute="top" secondItem="BWm-MD-wDI" secondAttribute="bottom" constant="20" id="rIH-qy-2V6"/>
-                <constraint firstItem="BWm-MD-wDI" firstAttribute="top" secondItem="wIH-jk-AHO" secondAttribute="bottom" constant="8" id="zE5-yN-dRW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wIH-jk-AHO" secondAttribute="trailing" constant="100" id="zh1-fw-sow"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="58.5" y="54.5"/>
         </view>
     </objects>
 </document>

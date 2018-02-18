@@ -8,4 +8,6 @@ target 'ProjectPOC' do
   # Pods for ProjectPOC
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'FBSDKLoginKit'
+
 end
